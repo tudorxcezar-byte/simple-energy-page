@@ -75,50 +75,50 @@ const ContactForm = ({ onClose }: ContactFormProps) => {
 
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
-            <Label htmlFor="name">Nombre</Label>
+            <Label htmlFor="name" className="text-[#1e293b]">Nombre</Label>
             <Input
               id="name"
               type="text"
               required
               value={formData.name}
               onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-              className="mt-1"
+              className="mt-1 bg-white border-black text-black"
             />
           </div>
 
           <div>
-            <Label htmlFor="email">Email</Label>
+            <Label htmlFor="email" className="text-[#1e293b]">Email</Label>
             <Input
               id="email"
               type="email"
               required
               value={formData.email}
               onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-              className="mt-1"
+              className="mt-1 bg-white border-black text-black"
             />
           </div>
 
           <div>
-            <Label htmlFor="phone">Teléfono</Label>
+            <Label htmlFor="phone" className="text-[#1e293b]">Teléfono</Label>
             <Input
               id="phone"
               type="tel"
               required
               value={formData.phone}
               onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-              className="mt-1"
+              className="mt-1 bg-white border-black text-black"
             />
           </div>
 
           <div>
-            <Label htmlFor="postalCode">Código Postal</Label>
+            <Label htmlFor="postalCode" className="text-[#1e293b]">Código Postal</Label>
             <Input
               id="postalCode"
               type="text"
               required
               value={formData.postalCode}
               onChange={(e) => setFormData({ ...formData, postalCode: e.target.value })}
-              className="mt-1"
+              className="mt-1 bg-white border-black text-black"
             />
           </div>
 

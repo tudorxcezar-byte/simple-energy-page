@@ -21,10 +21,10 @@ const Index = () => {
     <div className="min-h-screen bg-background text-foreground">
       <Header onContactClick={handleOpenForm} />
       <Hero />
-      <AboutSection />
       <TarifasHeader />
       <PricingSection onPlanClick={handleOpenForm} />
       <CTASection onCTAClick={handleOpenForm} />
+      <AboutSection />
       <StatsSection />
       <TestimonialsSection />
       <FinalCTASection onCTAClick={handleOpenForm} />
