@@ -3,10 +3,10 @@ import { Button } from "./ui/button";
 
 const TarifasHeader = () => {
   return (
-    <section className="py-12 bg-background">
+    <section className="py-12 bg-white">
       <div className="container mx-auto px-4 text-center">
-        <p className="text-sm tracking-wider text-muted-foreground mb-4">COMPAÑÍA DE LUZ Y GAS</p>
-        <h2 className="text-4xl md:text-5xl font-bold mb-8">
+        <p className="text-sm tracking-wider text-gray-600 mb-4">COMPAÑÍA DE LUZ Y GAS</p>
+        <h2 className="text-4xl md:text-5xl font-bold mb-8 text-[#1e293b]">
           Tarifas <span className="text-primary">Máis</span> Justas. Facturas <span className="text-primary">Máis</span> claras.
           <br />
           <span className="text-primary">Máis</span> Cerca

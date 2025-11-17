@@ -67,8 +67,8 @@ const ContactForm = ({ onClose }: ContactFormProps) => {
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-background/80 backdrop-blur-sm p-4">
-      <Card className="w-full max-w-md bg-card border-border p-8 relative">
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm p-4">
+      <Card className="w-full max-w-md bg-white border-gray-200 p-8 relative shadow-xl">
         <Button
           variant="ghost"
           size="icon"
@@ -78,8 +78,8 @@ const ContactForm = ({ onClose }: ContactFormProps) => {
           <X className="w-5 h-5" />
         </Button>
 
-        <h2 className="text-3xl font-bold mb-6">Contactar</h2>
-        <p className="text-muted-foreground mb-6">
+        <h2 className="text-3xl font-bold mb-6 text-[#1e293b]">Contactar</h2>
+        <p className="text-gray-600 mb-6">
           Déjanos tus datos y nos pondremos en contacto contigo
         </p>
 
