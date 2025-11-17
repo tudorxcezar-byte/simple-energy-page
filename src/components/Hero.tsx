@@ -1,11 +1,6 @@
-import { Button } from "./ui/button";
-import heroImage from "@/assets/hero-lantern.jpg";
+import heroImage from "@/assets/hero-background.jpeg";
 
-interface HeroProps {
-  onStartClick: () => void;
-}
-
-const Hero = ({ onStartClick }: HeroProps) => {
+const Hero = () => {
   return (
     <section className="relative min-h-[600px] flex items-center pt-24 pb-16">
       <div 
@@ -18,23 +13,14 @@ const Hero = ({ onStartClick }: HeroProps) => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-3xl">
           <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-            ILUMINANDO{" "}
+            ILUMINANDO
+            <br />
             <span className="text-primary">O NOSO</span>
           </h1>
           
-          <p className="text-xl text-foreground/90 mb-8 leading-relaxed">
-            Somos Máis, la{" "}
-            <span className="font-semibold">Compañía de Luz</span> gallega que te
-            ofrece tarifas justas, facturas claras y atención personalizada.
+          <p className="text-xl text-foreground/90 leading-relaxed">
+            Somos Máis, la Compañía de Luz gallega que te ofrece tarifas justas, facturas claras y atención personalizada.
           </p>
-          
-          <Button 
-            onClick={onStartClick} 
-            size="lg" 
-            className="bg-primary hover:bg-primary/90 text-lg px-8 py-6 h-auto"
-          >
-            EMPEZAR
-          </Button>
         </div>
       </div>
     </section>

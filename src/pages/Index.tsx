@@ -20,7 +20,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background text-foreground">
       <Header onContactClick={handleOpenForm} />
-      <Hero onStartClick={handleOpenForm} />
+      <Hero />
       <TarifasHeader />
       <PricingSection onPlanClick={handleOpenForm} />
       <CTASection onCTAClick={handleOpenForm} />

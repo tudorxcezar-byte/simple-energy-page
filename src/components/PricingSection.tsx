@@ -1,6 +1,9 @@
 import { Button } from "./ui/button";
 import { Card } from "./ui/card";
 import { Zap } from "lucide-react";
+import casaRustica from "@/assets/casa-rustica.jpeg";
+import casaBosque from "@/assets/casa-bosque.jpeg";
+import casaIluminada from "@/assets/casa-iluminada.jpeg";
 
 interface PricingSectionProps {
   onPlanClick: () => void;
@@ -12,6 +15,7 @@ const PricingSection = ({ onPlanClick }: PricingSectionProps) => {
       name: "Máis Estable Única",
       price: "0,11",
       unit: "€/kWh",
+      image: casaRustica,
       features: [
         "Mismo precio todo el día",
         "Estabilidad con Precio Fijo",
@@ -23,6 +27,7 @@ const PricingSection = ({ onPlanClick }: PricingSectionProps) => {
       name: "Máis Estable",
       price: "0,08",
       unit: "€/kWh",
+      image: casaBosque,
       features: [
         "Mismo Precio por tramos",
         "Estabilidad con Precio Fijo",
@@ -34,6 +39,7 @@ const PricingSection = ({ onPlanClick }: PricingSectionProps) => {
       name: "Máis Justa",
       price: "0,10",
       unit: "€/kWh",
+      image: casaIluminada,
       features: [
         "Precio a coste de mercado",
         "Adapta tu Consumo a las Horas más Económicas",
@@ -57,45 +63,57 @@ const PricingSection = ({ onPlanClick }: PricingSectionProps) => {
           {plans.map((plan, index) => (
             <Card 
               key={index} 
-              className="bg-white border-gray-200 p-8 hover:border-primary transition-colors shadow-lg"
+              className="bg-white border-gray-200 p-0 hover:border-primary transition-colors shadow-lg overflow-hidden"
             >
-              <div className="flex items-center gap-3 mb-6">
-                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                  <Zap className="w-6 h-6 text-primary" />
-                </div>
-                <h3 className="text-2xl font-bold text-[#1e293b]">{plan.name}</h3>
+              {/* Image at the top */}
+              <div className="relative h-48 overflow-hidden">
+                <img 
+                  src={plan.image} 
+                  alt={plan.name}
+                  className="w-full h-full object-cover"
+                />
               </div>
               
-              <div className="mb-6">
-                <div className="flex items-baseline gap-2">
-                  <span className="text-5xl font-bold text-primary">{plan.price}</span>
-                  <span className="text-xl text-gray-600">{plan.unit}</span>
+              <div className="p-8">
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                    <Zap className="w-6 h-6 text-primary" />
+                  </div>
+                  <h3 className="text-2xl font-bold text-[#1e293b]">{plan.name}</h3>
                 </div>
-              </div>
-              
-              <ul className="space-y-3 mb-8">
-                {plan.features.map((feature, idx) => (
-                  <li key={idx} className="flex items-start gap-2">
-                    <span className="text-primary mt-1">✓</span>
-                    <span className="text-sm text-gray-700">{feature}</span>
-                  </li>
-                ))}
-              </ul>
-              
-              <div className="space-y-3">
-                <Button 
-                  onClick={onPlanClick}
-                  className="w-full bg-primary hover:bg-primary/90"
-                >
-                  Ver Detalles
-                </Button>
-                <Button 
-                  onClick={onPlanClick}
-                  variant="outline"
-                  className="w-full border-primary text-primary hover:bg-primary/10"
-                >
-                  Calcular
-                </Button>
+                
+                <div className="mb-6">
+                  <div className="flex items-baseline gap-2">
+                    <span className="text-sm text-gray-600">Desde</span>
+                    <span className="text-5xl font-bold text-primary">{plan.price}</span>
+                    <span className="text-xl text-gray-600">{plan.unit}</span>
+                  </div>
+                </div>
+                
+                <ul className="space-y-3 mb-8">
+                  {plan.features.map((feature, idx) => (
+                    <li key={idx} className="flex items-start gap-2">
+                      <span className="text-primary mt-1">✓</span>
+                      <span className="text-sm text-gray-700">{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+                
+                <div className="space-y-3">
+                  <Button 
+                    onClick={onPlanClick}
+                    className="w-full bg-primary hover:bg-primary/90"
+                  >
+                    Ver Detalles
+                  </Button>
+                  <Button 
+                    onClick={onPlanClick}
+                    variant="outline"
+                    className="w-full border-primary text-primary hover:bg-primary/10"
+                  >
+                    Calcular
+                  </Button>
+                </div>
               </div>
             </Card>
           ))}

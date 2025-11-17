@@ -1,4 +1,4 @@
-import houseImage from "@/assets/modern-house-night.jpg";
+import aboutImage from "@/assets/contratar-online.webp";
 
 const AboutSection = () => {
   return (
@@ -7,14 +7,14 @@ const AboutSection = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="relative">
             <img 
-              src={houseImage} 
+              src={aboutImage} 
               alt="Casa iluminada" 
               className="rounded-lg shadow-2xl"
             />
           </div>
           
           <div className="space-y-6">
-            <p className="text-sm text-primary">TU COMPAÑÍA DE LUZ Y GAS, CERCA DE TI</p>
+            <p className="text-sm text-primary tracking-wider">TU COMPAÑÍA DE LUZ Y GAS, CERCA DE TI</p>
             
             <div className="space-y-4">
               <p className="text-foreground/90 leading-relaxed">
