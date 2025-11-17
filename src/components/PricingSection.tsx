@@ -102,12 +102,6 @@ const PricingSection = ({ onPlanClick }: PricingSectionProps) => {
             </Card>
           ))}
         </div>
-
-        <div className="text-center mt-12">
-          <Button onClick={onPlanClick} size="lg" className="bg-primary hover:bg-primary/90 text-lg px-8 py-6 h-auto">
-            Cámbiate a Máis Enerxía
-          </Button>
-        </div>
       </div>
     </section>
   );
