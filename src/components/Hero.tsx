@@ -11,7 +11,7 @@ const Hero = () => {
       </div>
       
       <div className="container mx-auto px-4 relative z-10">
-        <div className="max-w-3xl mr-auto">
+        <div className="max-w-3xl mr-0 ml-auto text-right">
           <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
             نضيء
             <br />
