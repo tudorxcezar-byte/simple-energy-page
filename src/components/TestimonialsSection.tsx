@@ -7,13 +7,13 @@ const TestimonialsSection = () => {
       initial: "B",
       name: "Bruno Valencia",
       date: "11/04/2025",
-      text: "Estaba na busca da nova compañía e por unha recomendación contatei con mais enerxía, e non me arrepiento..."
+      text: "Estaba na busca de nova compañía e por unha recomendación contratei con mais enerxía, e non me arrepinto, as facturas das miñas..."
     },
     {
       initial: "Y",
       name: "Yaiza Abraldes",
       date: "11/04/2025",
-      text: "Soy clienta desde hace 5 meses y las facturas me han bajado una barbaridad, el trato es exquisito por parte de los agentes, después..."
+      text: "Soy clienta desde hace 5 meses y las facturas me han bajado una barbaridad, el trato es exquisito por parte de los agentes, después de..."
     },
     {
       initial: "J",
