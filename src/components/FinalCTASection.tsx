@@ -7,19 +7,19 @@ interface FinalCTASectionProps {
 
 const FinalCTASection = ({ onCTAClick }: FinalCTASectionProps) => {
   return (
-    <section className="py-16 bg-muted/30">
+    <section className="py-16 bg-white">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
           <div>
             <p className="text-sm text-primary mb-4 tracking-wider">MÁIS VALE TARDE QUE NUNCA</p>
-            <h2 className="text-4xl font-bold mb-6">
+            <h2 className="text-4xl font-bold mb-6 text-[#1e293b]">
               Cámbiate a <span className="text-primary">Máis Enerxía Galega</span>
               <br />y disfruta de atención personalizada
             </h2>
-            <p className="text-foreground/80 mb-6 leading-relaxed">
+            <p className="text-gray-700 mb-6 leading-relaxed">
               Creemos en un trato más humano. Aquí, no encontrarás contestadores automáticos, solo personas reales comprometidas en ofrecerte un servicio energético, transparente y justo. Conócenos y experimenta el servicio de una compañía de luz y gas donde siempre te atiende alguien que se preocupa.
             </p>
-            <p className="text-foreground font-semibold mb-8">
+            <p className="text-[#1e293b] font-semibold mb-8">
               ¿Listo para descubrir la diferencia?
             </p>
             <Button 

@@ -44,11 +44,11 @@ const PricingSection = ({ onPlanClick }: PricingSectionProps) => {
   ];
 
   return (
-    <section className="py-16 bg-secondary/30">
+    <section className="py-16 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold mb-4">Nuestras Tarifas de Luz</h2>
-          <p className="text-lg text-muted-foreground">
+          <h2 className="text-4xl font-bold mb-4 text-[#1e293b]">Nuestras Tarifas de Luz</h2>
+          <p className="text-lg text-gray-600">
             Elige la tarifa que mejor se adapta a tus necesidades
           </p>
         </div>
@@ -57,19 +57,19 @@ const PricingSection = ({ onPlanClick }: PricingSectionProps) => {
           {plans.map((plan, index) => (
             <Card 
               key={index} 
-              className="bg-card border-border p-8 hover:border-primary transition-colors"
+              className="bg-white border-gray-200 p-8 hover:border-primary transition-colors shadow-lg"
             >
               <div className="flex items-center gap-3 mb-6">
                 <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
                   <Zap className="w-6 h-6 text-primary" />
                 </div>
-                <h3 className="text-2xl font-bold">{plan.name}</h3>
+                <h3 className="text-2xl font-bold text-[#1e293b]">{plan.name}</h3>
               </div>
               
               <div className="mb-6">
                 <div className="flex items-baseline gap-2">
                   <span className="text-5xl font-bold text-primary">{plan.price}</span>
-                  <span className="text-xl text-muted-foreground">{plan.unit}</span>
+                  <span className="text-xl text-gray-600">{plan.unit}</span>
                 </div>
               </div>
               
@@ -77,7 +77,7 @@ const PricingSection = ({ onPlanClick }: PricingSectionProps) => {
                 {plan.features.map((feature, idx) => (
                   <li key={idx} className="flex items-start gap-2">
                     <span className="text-primary mt-1">✓</span>
-                    <span className="text-sm">{feature}</span>
+                    <span className="text-sm text-gray-700">{feature}</span>
                   </li>
                 ))}
               </ul>
