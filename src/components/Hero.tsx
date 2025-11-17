@@ -1,4 +1,5 @@
 import { Button } from "./ui/button";
+import heroImage from "@/assets/hero-lantern.jpg";
 
 interface HeroProps {
   onStartClick: () => void;
@@ -7,7 +8,12 @@ interface HeroProps {
 const Hero = ({ onStartClick }: HeroProps) => {
   return (
     <section className="relative min-h-[600px] flex items-center pt-24 pb-16">
-      <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-secondary/30" />
+      <div 
+        className="absolute inset-0 bg-cover bg-center"
+        style={{ backgroundImage: `url(${heroImage})` }}
+      >
+        <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/80 to-background/60" />
+      </div>
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-3xl">

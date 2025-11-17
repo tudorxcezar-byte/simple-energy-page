@@ -1,7 +1,13 @@
 import { useState } from "react";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import TarifasHeader from "@/components/TarifasHeader";
 import PricingSection from "@/components/PricingSection";
+import CTASection from "@/components/CTASection";
+import StatsSection from "@/components/StatsSection";
+import TestimonialsSection from "@/components/TestimonialsSection";
+import AboutSection from "@/components/AboutSection";
+import FinalCTASection from "@/components/FinalCTASection";
 import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
 
@@ -15,7 +21,13 @@ const Index = () => {
     <div className="min-h-screen bg-background text-foreground">
       <Header onContactClick={handleOpenForm} />
       <Hero onStartClick={handleOpenForm} />
+      <TarifasHeader />
       <PricingSection onPlanClick={handleOpenForm} />
+      <CTASection onCTAClick={handleOpenForm} />
+      <StatsSection />
+      <TestimonialsSection />
+      <AboutSection />
+      <FinalCTASection onCTAClick={handleOpenForm} />
       <Footer />
       
       {showContactForm && <ContactForm onClose={handleCloseForm} />}
