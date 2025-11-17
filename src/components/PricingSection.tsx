@@ -9,35 +9,35 @@ interface PricingSectionProps {
 const PricingSection = ({ onPlanClick }: PricingSectionProps) => {
   const plans = [
     {
-      name: "Tarifa Estable",
-      price: "0,12",
+      name: "Máis Estable Única",
+      price: "0,11",
       unit: "€/kWh",
       features: [
-        "Precio fijo garantizado",
-        "Sin sorpresas en la factura",
-        "Atención personalizada",
+        "Mismo precio todo el día",
+        "Estabilidad con Precio Fijo",
+        "Sin Horarios ni Subidas Inesperadas",
         "100% energía renovable"
       ]
     },
     {
-      name: "Tarifa Flexible",
-      price: "0,10",
-      unit: "€/kWh",
-      features: [
-        "Precio variable según mercado",
-        "Ahorro en horas valle",
-        "Control de consumo",
-        "100% energía renovable"
-      ]
-    },
-    {
-      name: "Tarifa Nocturna",
+      name: "Máis Estable",
       price: "0,08",
       unit: "€/kWh",
       features: [
-        "Descuento en horario nocturno",
-        "Ideal para vehículos eléctricos",
-        "Ahorro hasta 40%",
+        "Mismo Precio por tramos",
+        "Estabilidad con Precio Fijo",
+        "Adapta tu Consumo a las Horas más Económicas",
+        "100% energía renovable"
+      ]
+    },
+    {
+      name: "Máis Justa",
+      price: "0,10",
+      unit: "€/kWh",
+      features: [
+        "Precio a coste de mercado",
+        "Adapta tu Consumo a las Horas más Económicas",
+        "Ahorra en horas valle",
         "100% energía renovable"
       ]
     }
