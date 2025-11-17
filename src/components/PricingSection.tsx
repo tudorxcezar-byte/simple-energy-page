@@ -69,8 +69,8 @@ const PricingSection = ({ onPlanClick }: PricingSectionProps) => {
               </div>
 
               <div className="p-8">
-                <div className="flex items-center gap-3 mb-6">
-                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                <div className="flex items-center gap-3 mb-6 min-h-[5rem]">
+                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
                     <Zap className="w-6 h-6 text-primary" />
                   </div>
                   <h3 className="text-2xl font-bold text-[#1e293b]">{plan.name}</h3>
