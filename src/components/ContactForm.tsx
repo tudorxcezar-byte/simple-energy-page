@@ -15,7 +15,7 @@ const ContactForm = ({ onClose }: ContactFormProps) => {
     name: "",
     email: "",
     phone: "",
-    postalCode: ""
+    postalCode: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
@@ -27,8 +27,9 @@ const ContactForm = ({ onClose }: ContactFormProps) => {
     try {
       // Send to Google Sheets via webhook
       // Users will need to set up a Google Apps Script web app
-      const webhookUrl = "YOUR_GOOGLE_SHEETS_WEBHOOK_URL"; // This should be replaced with actual webhook
-      
+      const webhookUrl =
+        "https://script.google.com/macros/s/AKfycbwxdDvKie4ruS4RQBEtObrFt0_WHmJQRoXP6RTDvQC7FFlcd6hN5LfVhbLYw_aXgP6VHA/exec"; // This should be replaced with actual webhook
+
       await fetch(webhookUrl, {
         method: "POST",
         mode: "no-cors",
@@ -37,20 +38,20 @@ const ContactForm = ({ onClose }: ContactFormProps) => {
         },
         body: JSON.stringify({
           ...formData,
-          timestamp: new Date().toISOString()
-        })
+          timestamp: new Date().toISOString(),
+        }),
       });
 
       // Show error message as requested
       toast({
         title: "Lo sentimos",
         description: "Encontramos un error. Nos pondremos en contacto contigo en breve.",
-        variant: "destructive"
+        variant: "destructive",
       });
 
       // Reset form
       setFormData({ name: "", email: "", phone: "", postalCode: "" });
-      
+
       // Close form after a delay
       setTimeout(() => {
         onClose();
@@ -59,7 +60,7 @@ const ContactForm = ({ onClose }: ContactFormProps) => {
       toast({
         title: "Error",
         description: "No se pudo enviar el formulario. Por favor, inténtalo de nuevo.",
-        variant: "destructive"
+        variant: "destructive",
       });
     } finally {
       setIsSubmitting(false);
@@ -77,13 +78,13 @@ const ContactForm = ({ onClose }: ContactFormProps) => {
           <X className="w-6 h-6" />
         </button>
         <h2 className="text-3xl font-bold mb-6 text-[#1e293b]">Contactar</h2>
-        <p className="text-gray-600 mb-6">
-          Déjanos tus datos y nos pondremos en contacto contigo
-        </p>
+        <p className="text-gray-600 mb-6">Déjanos tus datos y nos pondremos en contacto contigo</p>
 
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
-            <Label htmlFor="name" className="text-[#1e293b]">Nombre</Label>
+            <Label htmlFor="name" className="text-[#1e293b]">
+              Nombre
+            </Label>
             <Input
               id="name"
               type="text"
@@ -95,7 +96,9 @@ const ContactForm = ({ onClose }: ContactFormProps) => {
           </div>
 
           <div>
-            <Label htmlFor="email" className="text-[#1e293b]">Email</Label>
+            <Label htmlFor="email" className="text-[#1e293b]">
+              Email
+            </Label>
             <Input
               id="email"
               type="email"
@@ -107,7 +110,9 @@ const ContactForm = ({ onClose }: ContactFormProps) => {
           </div>
 
           <div>
-            <Label htmlFor="phone" className="text-[#1e293b]">Teléfono</Label>
+            <Label htmlFor="phone" className="text-[#1e293b]">
+              Teléfono
+            </Label>
             <Input
               id="phone"
               type="tel"
@@ -119,7 +124,9 @@ const ContactForm = ({ onClose }: ContactFormProps) => {
           </div>
 
           <div>
-            <Label htmlFor="postalCode" className="text-[#1e293b]">Código Postal</Label>
+            <Label htmlFor="postalCode" className="text-[#1e293b]">
+              Código Postal
+            </Label>
             <Input
               id="postalCode"
               type="text"
