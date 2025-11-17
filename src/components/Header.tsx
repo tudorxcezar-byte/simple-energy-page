@@ -26,9 +26,9 @@ const Header = ({ onContactClick }: HeaderProps) => {
             <span>Rúa do Doutor Cadaval, 3, 2º, Vigo (Pontevedra)</span>
           </div>
           
-          {/* Button on the right */}
+          {/* Button on the left for RTL */}
           <Button onClick={onContactClick} size="lg" className="bg-primary hover:bg-primary/90">
-            CONTRATAR
+            تعاقد
           </Button>
         </div>
       </div>

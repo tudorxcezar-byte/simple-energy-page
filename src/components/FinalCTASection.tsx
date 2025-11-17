@@ -11,16 +11,16 @@ const FinalCTASection = ({ onCTAClick }: FinalCTASectionProps) => {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
           <div>
-            <p className="text-sm text-primary mb-4 tracking-wider">MÁIS VALE TARDE QUE NUNCA</p>
+            <p className="text-sm text-primary mb-4 tracking-wider">الأفضل متأخراً من عدمه</p>
             <h2 className="text-4xl font-bold mb-6 text-[#1e293b]">
-              Cámbiate a <span className="text-primary">Máis Enerxía Galega</span>
-              <br />y disfruta de atención personalizada
+              انتقل إلى <span className="text-primary">Máis Enerxía Galega</span>
+              <br />واستمتع بخدمة عملاء شخصية
             </h2>
             <p className="text-gray-700 mb-6 leading-relaxed">
-              Creemos en un trato más humano. Aquí, no encontrarás contestadores automáticos, solo personas reales comprometidas en ofrecerte un servicio energético, transparente y justo. Conócenos y experimenta el servicio de una compañía de luz y gas donde siempre te atiende alguien que se preocupa.
+              نؤمن بمعاملة أكثر إنسانية. هنا، لن تجد أجهزة رد آلي، فقط أشخاص حقيقيون ملتزمون بتقديم خدمة طاقة شفافة وعادلة. تعرف علينا واختبر خدمة شركة كهرباء وغاز حيث يهتم بك دائماً شخص يهتم بأمرك.
             </p>
             <p className="text-[#1e293b] font-semibold">
-              ¿Listo para descubrir la diferencia?
+              هل أنت مستعد لاكتشاف الفرق؟
             </p>
           </div>
           

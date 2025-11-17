@@ -17,10 +17,10 @@ const PricingSection = ({ onPlanClick }: PricingSectionProps) => {
       unit: "€/kWh",
       image: casaRustica,
       features: [
-        "Mismo precio todo el día",
-        "Estabilidad con Precio Fijo",
-        "Sin Horarios ni Subidas Inesperadas",
-        "100% energía renovable",
+        "نفس السعر طوال اليوم",
+        "استقرار بسعر ثابت",
+        "بدون جداول زمنية أو زيادات غير متوقعة",
+        "100٪ طاقة متجددة",
       ],
     },
     {
@@ -29,10 +29,10 @@ const PricingSection = ({ onPlanClick }: PricingSectionProps) => {
       unit: "€/kWh",
       image: casaBosque,
       features: [
-        "Mismo Precio por tramos",
-        "Estabilidad con Precio Fijo",
-        "Adapta tu Consumo a las Horas más Económicas",
-        "100% energía renovable",
+        "نفس السعر حسب الفترات",
+        "استقرار بسعر ثابت",
+        "اضبط استهلاكك على الساعات الأكثر اقتصادية",
+        "100٪ طاقة متجددة",
       ],
     },
     {
@@ -41,10 +41,10 @@ const PricingSection = ({ onPlanClick }: PricingSectionProps) => {
       unit: "€/kWh",
       image: casaIluminada,
       features: [
-        "Precio a coste de mercado",
-        "Adapta tu Consumo a las Horas más Económicas",
-        "Ahorra en horas valle",
-        "100% energía renovable",
+        "السعر بتكلفة السوق",
+        "اضبط استهلاكك على الساعات الأكثر اقتصادية",
+        "وفّر في ساعات الذروة المنخفضة",
+        "100٪ طاقة متجددة",
       ],
     },
   ];
@@ -53,8 +53,8 @@ const PricingSection = ({ onPlanClick }: PricingSectionProps) => {
     <section className="py-16 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold mb-4 text-[#1e293b]">Nuestras Tarifas de Luz</h2>
-          <p className="text-lg text-gray-600">Elige la tarifa que mejor se adapta a tus necesidades</p>
+          <h2 className="text-4xl font-bold mb-4 text-[#1e293b]">تعريفات الكهرباء لدينا</h2>
+          <p className="text-lg text-gray-600">اختر التعريفة التي تناسب احتياجاتك</p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -78,7 +78,7 @@ const PricingSection = ({ onPlanClick }: PricingSectionProps) => {
 
                 <div className="mb-6">
                   <div className="flex items-baseline gap-2">
-                    <span className="text-sm text-gray-600">Desde</span>
+                    <span className="text-sm text-gray-600">من</span>
                     <span className="text-5xl font-bold text-primary">{plan.price}</span>
                     <span className="text-xl text-gray-600">{plan.unit}</span>
                   </div>
@@ -95,7 +95,7 @@ const PricingSection = ({ onPlanClick }: PricingSectionProps) => {
 
                 <div className="space-y-3">
                   <Button onClick={onPlanClick} className="w-full bg-primary hover:bg-primary/90">
-                    Ver Detalles
+                    عرض التفاصيل
                   </Button>
                 </div>
               </div>

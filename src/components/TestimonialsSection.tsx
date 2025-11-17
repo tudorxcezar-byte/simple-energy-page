@@ -8,19 +8,19 @@ const TestimonialsSection = () => {
       initial: "B",
       name: "Bruno Valencia",
       date: "11/04/2025",
-      text: "Estaba na busca de nova compañía e por unha recomendación contratei con con mais enerxía, e non me arrepinto,..."
+      text: "كنت أبحث عن شركة جديدة وبناءً على توصية تعاقدت مع Máis Enerxía، ولم أندم..."
     },
     {
       initial: "y",
       name: "yaiza Abraldes",
       date: "11/04/2025",
-      text: "Soy clienta desde hace 5 meses y las facturas me han bajado una barbaridad, el trato es exquisito por parte de los agentes, después..."
+      text: "أنا عميلة منذ 5 أشهر وانخفضت فواتيري بشكل كبير، والخدمة ممتازة من قبل الموظفين، بعد ذلك..."
     },
     {
       initial: "J",
       name: "Jose",
       date: "19/02/2025",
-      text: "Onrradez e bo trato."
+      text: "صدق ومعاملة جيدة."
     }
   ];
 
@@ -36,19 +36,19 @@ const TestimonialsSection = () => {
     <section className="py-16 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <p className="text-sm text-[#1e293b] mb-2 tracking-wider font-semibold">MÁIS QUE UNA COMPAÑÍA ELÉCTRICA</p>
+          <p className="text-sm text-[#1e293b] mb-2 tracking-wider font-semibold">أكثر من شركة كهرباء</p>
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-[#1e293b]">
-            Donde la Energía se Siente en <span className="text-primary">Casa</span>
+            حيث الطاقة تشعر بأنك في <span className="text-primary">المنزل</span>
           </h2>
           <p className="text-gray-600 max-w-3xl mx-auto text-base">
-            No nos respaldamos únicamente en nuestras palabras, sino en las experiencias de quienes forman parte de nuestra familia. Si nuestra compañía de luz y gas es digna de confianza es porque nuestros clientes así lo han expresado con sus propias voces.
+            نحن لا نعتمد فقط على كلماتنا، بل على تجارب من يشكلون جزءاً من عائلتنا. إذا كانت شركتنا للكهرباء والغاز جديرة بالثقة فذلك لأن عملاءنا عبروا عن ذلك بأصواتهم الخاصة.
           </p>
         </div>
 
         <div className="flex flex-col md:flex-row items-start gap-8 max-w-6xl mx-auto">
           {/* Rating Badge on the Left */}
           <div className="flex flex-col items-center bg-white border border-gray-200 rounded-lg p-8 shadow-sm min-w-[240px]">
-            <div className="text-3xl font-bold text-[#1e293b] mb-4">BUENO</div>
+            <div className="text-3xl font-bold text-[#1e293b] mb-4">جيد</div>
             <div className="flex gap-1 mb-3">
               {[1, 2, 3, 4].map((i) => (
                 <img key={i} src={starIcon} alt="star" className="w-8 h-8" />
@@ -57,7 +57,7 @@ const TestimonialsSection = () => {
                 <img src={starIcon} alt="star" className="w-8 h-8 opacity-30" />
               </div>
             </div>
-            <p className="text-sm text-gray-700 mb-4">A base de <strong>38 reseñas</strong></p>
+            <p className="text-sm text-gray-700 mb-4">بناءً على <strong>38 تقييم</strong></p>
             <img src={googleLogo} alt="Google" className="w-24" />
           </div>
 
@@ -83,7 +83,7 @@ const TestimonialsSection = () => {
                 <p className="text-sm text-gray-700 mt-3 leading-relaxed">{testimonial.text}</p>
                 
                 <button className="text-sm text-gray-500 mt-2 hover:text-gray-700">
-                  Leer más
+                  اقرأ المزيد
                 </button>
               </Card>
             ))}
