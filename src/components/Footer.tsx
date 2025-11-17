@@ -8,7 +8,7 @@ const Footer = () => {
           <div>
             <div className="text-2xl font-bold text-[#1e293b] mb-2">
               Máis
-              <span className="block text-sm font-normal text-gray-600">enerxía galega</span>
+              <span className="block text-sm font-normal text-gray-600">طاقة غاليسية</span>
             </div>
           </div>
           

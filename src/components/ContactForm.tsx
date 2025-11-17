@@ -44,8 +44,8 @@ const ContactForm = ({ onClose }: ContactFormProps) => {
 
       // Show error message as requested
       toast({
-        title: "Lo sentimos",
-        description: "Encontramos un error. Nos pondremos en contacto contigo en breve.",
+        title: "نأسف",
+        description: "وجدنا خطأ. سنتصل بك قريباً.",
         variant: "destructive",
       });
 
@@ -58,8 +58,8 @@ const ContactForm = ({ onClose }: ContactFormProps) => {
       }, 2000);
     } catch (error) {
       toast({
-        title: "Error",
-        description: "No se pudo enviar el formulario. Por favor, inténtalo de nuevo.",
+        title: "خطأ",
+        description: "تعذر إرسال النموذج. يرجى المحاولة مرة أخرى.",
         variant: "destructive",
       });
     } finally {
@@ -72,18 +72,18 @@ const ContactForm = ({ onClose }: ContactFormProps) => {
       <Card className="w-full max-w-md bg-white border-gray-200 p-8 relative shadow-xl">
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 text-gray-500 hover:text-gray-700 transition-colors"
-          aria-label="Cerrar"
+          className="absolute top-4 left-4 text-gray-500 hover:text-gray-700 transition-colors"
+          aria-label="إغلاق"
         >
           <X className="w-6 h-6" />
         </button>
-        <h2 className="text-3xl font-bold mb-6 text-[#1e293b]">Contactar</h2>
-        <p className="text-gray-600 mb-6">Déjanos tus datos y nos pondremos en contacto contigo</p>
+        <h2 className="text-3xl font-bold mb-6 text-[#1e293b]">اتصل بنا</h2>
+        <p className="text-gray-600 mb-6">اترك بياناتك وسنتواصل معك</p>
 
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
             <Label htmlFor="name" className="text-[#1e293b]">
-              Nombre
+              الاسم
             </Label>
             <Input
               id="name"
@@ -97,7 +97,7 @@ const ContactForm = ({ onClose }: ContactFormProps) => {
 
           <div>
             <Label htmlFor="email" className="text-[#1e293b]">
-              Email
+              البريد الإلكتروني
             </Label>
             <Input
               id="email"
@@ -111,7 +111,7 @@ const ContactForm = ({ onClose }: ContactFormProps) => {
 
           <div>
             <Label htmlFor="phone" className="text-[#1e293b]">
-              Teléfono
+              الهاتف
             </Label>
             <Input
               id="phone"
@@ -125,7 +125,7 @@ const ContactForm = ({ onClose }: ContactFormProps) => {
 
           <div>
             <Label htmlFor="postalCode" className="text-[#1e293b]">
-              Código Postal
+              الرمز البريدي
             </Label>
             <Input
               id="postalCode"
@@ -142,7 +142,7 @@ const ContactForm = ({ onClose }: ContactFormProps) => {
             className="w-full bg-[#0d9488] hover:bg-[#0d9488]/90 text-white"
             disabled={isSubmitting}
           >
-            {isSubmitting ? "Enviando..." : "Enviar"}
+            {isSubmitting ? "جارٍ الإرسال..." : "إرسال"}
           </Button>
         </form>
       </Card>

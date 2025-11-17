@@ -5,14 +5,14 @@ const AboutSection = () => {
     <section className="py-16 bg-white">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-12 text-[#1e293b]">
-          TU COMPAÑÍA DE LUZ Y GAS, CERCA DE TI
+          شركة الكهرباء والغاز الخاصة بك، قريبة منك
         </h2>
         
         <div className="grid md:grid-cols-2 gap-0 max-w-7xl mx-auto">
           <div className="relative h-full min-h-[500px]">
             <img 
               src={aboutImage} 
-              alt="Casa iluminada" 
+              alt="منزل مضاء" 
               className="w-full h-full object-cover"
             />
           </div>
@@ -20,17 +20,17 @@ const AboutSection = () => {
           <div className="bg-white p-12 flex flex-col justify-center space-y-6">
             <div className="space-y-4">
               <p className="text-[#1e293b] leading-relaxed">
-                En Máis Enerxía, queremos acercarte la electricidad y el gas con un{" "}
-                <span className="font-semibold">servicio sin complicaciones</span>. Somos una compañía de luz y gas de Galicia y nuestro único objetivo es iluminar los hogares de nuestros clientes. Iluminar O Noso, nuestra región y lo que nos enorgullece profundamente.
+                في Máis Enerxía، نريد أن نقربك من الكهرباء والغاز{" "}
+                <span className="font-semibold">بخدمة بدون تعقيدات</span>. نحن شركة كهرباء وغاز من غاليسيا وهدفنا الوحيد هو إضاءة منازل عملائنا. إضاءة منطقتنا وما نفخر به بعمق.
               </p>
               
               <p className="text-[#1e293b] leading-relaxed">
-                Como una de las principales compañías de luz y gas en Galicia, hemos desarrollado una gama completa de tarifas de ambos servicios para brindarte{" "}
-                <span className="font-semibold">comodidad, seguridad y ahorro</span>. Además, te damos multitud de facilidades: cambio de tarifa siempre que lo desees, transparente y con atención al cliente personalizada.
+                كواحدة من شركات الكهرباء والغاز الرائدة في غاليسيا، قمنا بتطوير مجموعة كاملة من تعريفات كلا الخدمتين لتوفير{" "}
+                <span className="font-semibold">الراحة والأمان والتوفير</span>. بالإضافة إلى ذلك، نمنحك العديد من التسهيلات: تغيير التعريفة متى شئت، بشفافية وخدمة عملاء شخصية.
               </p>
               
               <p className="text-[#1e293b] leading-relaxed">
-                Nuestro compromiso con lo nuestro y tu satisfacción nos ha convertido en la compañía de gas y electricidad preferida de miles de clientes en toda Galicia.
+                التزامنا بمنطقتنا ورضاك جعلنا شركة الغاز والكهرباء المفضلة لآلاف العملاء في جميع أنحاء غاليسيا.
               </p>
             </div>
           </div>
