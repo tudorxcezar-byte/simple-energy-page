@@ -20,8 +20,8 @@ const PricingSection = ({ onPlanClick }: PricingSectionProps) => {
         "Mismo precio todo el día",
         "Estabilidad con Precio Fijo",
         "Sin Horarios ni Subidas Inesperadas",
-        "100% energía renovable"
-      ]
+        "100% energía renovable",
+      ],
     },
     {
       name: "Máis Estable",
@@ -32,8 +32,8 @@ const PricingSection = ({ onPlanClick }: PricingSectionProps) => {
         "Mismo Precio por tramos",
         "Estabilidad con Precio Fijo",
         "Adapta tu Consumo a las Horas más Económicas",
-        "100% energía renovable"
-      ]
+        "100% energía renovable",
+      ],
     },
     {
       name: "Máis Justa",
@@ -44,9 +44,9 @@ const PricingSection = ({ onPlanClick }: PricingSectionProps) => {
         "Precio a coste de mercado",
         "Adapta tu Consumo a las Horas más Económicas",
         "Ahorra en horas valle",
-        "100% energía renovable"
-      ]
-    }
+        "100% energía renovable",
+      ],
+    },
   ];
 
   return (
@@ -54,26 +54,20 @@ const PricingSection = ({ onPlanClick }: PricingSectionProps) => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold mb-4 text-[#1e293b]">Nuestras Tarifas de Luz</h2>
-          <p className="text-lg text-gray-600">
-            Elige la tarifa que mejor se adapta a tus necesidades
-          </p>
+          <p className="text-lg text-gray-600">Elige la tarifa que mejor se adapta a tus necesidades</p>
         </div>
-        
+
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {plans.map((plan, index) => (
-            <Card 
-              key={index} 
+            <Card
+              key={index}
               className="bg-white border-gray-200 p-0 hover:border-primary transition-colors shadow-lg overflow-hidden"
             >
               {/* Image at the top */}
               <div className="relative h-48 overflow-hidden">
-                <img 
-                  src={plan.image} 
-                  alt={plan.name}
-                  className="w-full h-full object-cover"
-                />
+                <img src={plan.image} alt={plan.name} className="w-full h-full object-cover" />
               </div>
-              
+
               <div className="p-8">
                 <div className="flex items-center gap-3 mb-6">
                   <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
@@ -81,7 +75,7 @@ const PricingSection = ({ onPlanClick }: PricingSectionProps) => {
                   </div>
                   <h3 className="text-2xl font-bold text-[#1e293b]">{plan.name}</h3>
                 </div>
-                
+
                 <div className="mb-6">
                   <div className="flex items-baseline gap-2">
                     <span className="text-sm text-gray-600">Desde</span>
@@ -89,7 +83,7 @@ const PricingSection = ({ onPlanClick }: PricingSectionProps) => {
                     <span className="text-xl text-gray-600">{plan.unit}</span>
                   </div>
                 </div>
-                
+
                 <ul className="space-y-3 mb-8">
                   {plan.features.map((feature, idx) => (
                     <li key={idx} className="flex items-start gap-2">
@@ -98,33 +92,19 @@ const PricingSection = ({ onPlanClick }: PricingSectionProps) => {
                     </li>
                   ))}
                 </ul>
-                
+
                 <div className="space-y-3">
-                  <Button 
-                    onClick={onPlanClick}
-                    className="w-full bg-primary hover:bg-primary/90"
-                  >
+                  <Button onClick={onPlanClick} className="w-full bg-primary hover:bg-primary/90">
                     Ver Detalles
-                  </Button>
-                  <Button 
-                    onClick={onPlanClick}
-                    variant="outline"
-                    className="w-full border-primary text-primary hover:bg-primary/10"
-                  >
-                    Calcular
                   </Button>
                 </div>
               </div>
             </Card>
           ))}
         </div>
-        
+
         <div className="text-center mt-12">
-          <Button 
-            onClick={onPlanClick}
-            size="lg"
-            className="bg-primary hover:bg-primary/90 text-lg px-8 py-6 h-auto"
-          >
+          <Button onClick={onPlanClick} size="lg" className="bg-primary hover:bg-primary/90 text-lg px-8 py-6 h-auto">
             Cámbiate a Máis Enerxía
           </Button>
         </div>
