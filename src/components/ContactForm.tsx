@@ -3,7 +3,6 @@ import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Label } from "./ui/label";
 import { Card } from "./ui/card";
-import { X } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
 interface ContactFormProps {
@@ -69,15 +68,6 @@ const ContactForm = ({ onClose }: ContactFormProps) => {
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm p-4">
       <Card className="w-full max-w-md bg-white border-gray-200 p-8 relative shadow-xl">
-        <Button
-          variant="ghost"
-          size="icon"
-          className="absolute top-4 right-4"
-          onClick={onClose}
-        >
-          <X className="w-5 h-5" />
-        </Button>
-
         <h2 className="text-3xl font-bold mb-6 text-[#1e293b]">Contactar</h2>
         <p className="text-gray-600 mb-6">
           Déjanos tus datos y nos pondremos en contacto contigo
@@ -134,7 +124,7 @@ const ContactForm = ({ onClose }: ContactFormProps) => {
 
           <Button
             type="submit"
-            className="w-full bg-primary hover:bg-primary/90"
+            className="w-full bg-[#0d9488] hover:bg-[#0d9488]/90 text-white"
             disabled={isSubmitting}
           >
             {isSubmitting ? "Enviando..." : "Enviar"}
