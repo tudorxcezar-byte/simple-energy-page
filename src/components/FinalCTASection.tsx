@@ -19,17 +19,9 @@ const FinalCTASection = ({ onCTAClick }: FinalCTASectionProps) => {
             <p className="text-gray-700 mb-6 leading-relaxed">
               Creemos en un trato más humano. Aquí, no encontrarás contestadores automáticos, solo personas reales comprometidas en ofrecerte un servicio energético, transparente y justo. Conócenos y experimenta el servicio de una compañía de luz y gas donde siempre te atiende alguien que se preocupa.
             </p>
-            <p className="text-[#1e293b] font-semibold mb-8">
+            <p className="text-[#1e293b] font-semibold">
               ¿Listo para descubrir la diferencia?
             </p>
-            <Button 
-              onClick={onCTAClick}
-              size="lg"
-              variant="outline"
-              className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground"
-            >
-              Cámbiate a Máis Enerxía
-            </Button>
           </div>
           
           <div className="flex items-center justify-center">
