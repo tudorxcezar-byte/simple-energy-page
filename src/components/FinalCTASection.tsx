@@ -1,5 +1,5 @@
 import { Button } from "./ui/button";
-import logoIcon from "@/assets/logo-icon.png";
+import logoIcon from "@/assets/logo-icon.svg";
 
 interface FinalCTASectionProps {
   onCTAClick: () => void;
